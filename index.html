@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El viewport es básicamente el área visible de la página web en tu navegador. Piensen en él como la ventana a través de la cual ves el contenido de una página web. 
+
+    Esta etiqueta le dice al navegador que el sitio web debe adaptarse al tamaño de la pantalla del dispositivo. Es la clave para que una página se vea bien en cualquier aparato.
+    
+    Valor más común: device-width → hace que el ancho del sitio sea igual al del dispositivo.-->
+    <!--Define el nivel de zoom inicial cuando se carga la página.
+        1.0 = 100% (sin zoom)
+        0.5 = 50% (alejado)
+        2.0 = 200% (acercado)-->
+
+
+    <!--<meta name="viewport" content="minimum-scale=1.0"> Establece el mínimo nivel de zoom que el usuario puede aplicar.
+                                                        Evita que el usuario aleje demasiado la página-->
+
+    <!--<meta name="viewport" content="maximum-scale=2.0"> Establece el máximo nivel de zoom permitido.
+                                                        Puede limitar que el usuario acerque mucho la página.-->
+
+    <title>Explicación de prueba</title>
+    <style>
+        @property --colorPrin {
+            syntax: "<color>";
+            inherits: true; /*Si tiene este elemento el padre los hijos ederaran estos atributos*/
+            initial-value: #1B8EF3;
+        }
+
+        @property --tamaño {
+            syntax: "<length>";
+            inherits: false;
+            initial-value: 32px;
+        }
+
+        p {
+            color: var(--colorPrin);
+            font-size: var(--tamaño);
+        }
+
+        .mask1 {
+            mask-image: url(https://cdn-icons-png.flaticon.com/512/732/732084.png);
+            mask-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mask1">
+        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="ImagenEjemplo" width="600" height="400">
+    </div>
+
+    <!--se utiliza para proporcionar una descripción de la imagen. Este texto se muestra en el lugar de la imagen si por alguna razón esta no se puede cargar 
+        En caso de que una persona este utilizando un lector de pantalla visual con eso se pueden dar cuenta de lo que simboliza la imagen
+        -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum vehicula nisl in pharetra. Nulla non
+        accumsan massa. Nam lobortis posuere eros eu posuere. Quisque et aliquet justo, eget semper orci. Curabitur
+        mattis dolor leo, ut congue metus malesuada ac. Vestibulum imperdiet augue at risus commodo maximus. Duis at
+        ante magna. Suspendisse est tellus, mollis eu euismod id, luctus quis libero. Suspendisse potenti. In ac enim
+        porta, ullamcorper elit vel, tristique leo. Vestibulum et felis vel augue bibendum ultrices blandit sed ex. Sed
+        eget nunc imperdiet, bibendum arcu ac, cursus ligula. Curabitur lacinia quam eu consequat pretium. Ut et nunc
+        quis diam dapibus laoreet. Fusce nec risus nunc. Aenean efficitur justo a tincidunt gravida.
+
+        Fusce in dolor mauris. In massa sem, fermentum id est in, facilisis semper justo. Vestibulum faucibus sagittis
+        sem, sed vehicula dolor lacinia et. Nulla placerat sem augue, sit amet aliquet eros tristique eget. Suspendisse
+        sodales consectetur imperdiet. Etiam eget erat sed eros varius interdum. Aliquam erat volutpat. Vestibulum ante
+        ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In eu massa mi. Nam quis auctor ante.
+        Vestibulum pharetra dolor et magna lobortis dapibus.
+
+        Proin vel massa massa. In ullamcorper, nisl quis dapibus laoreet, justo erat tempor nisl, non eleifend ex leo in
+        ante. Cras mattis vel lacus ac rutrum. Sed et mollis enim. Donec ligula purus, egestas nec diam vitae, hendrerit
+        scelerisque lectus. Nam consectetur ut libero in bibendum. Fusce at porta justo. Mauris ultrices, tortor eu
+        hendrerit ultrices, quam sem varius mauris, sed mattis mauris orci a dolor.
+
+        Curabitur neque justo, luctus vel lorem ac, imperdiet auctor metus. Nulla nec urna nec lorem iaculis aliquet id
+        vel elit. Nullam id sapien nec velit lobortis accumsan ac id purus. Quisque enim tellus, vehicula eget purus
+        vel, egestas porta tortor. Etiam et eleifend dui, nec pellentesque lectus. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia curae; Duis sed mollis lectus. Aliquam porttitor tempor mollis.
+        Aliquam nisl neque, condimentum quis tellus eget, porttitor semper odio. Nulla facilisi. Proin tincidunt, ligula
+        sit amet fermentum congue, est mauris fermentum sem, sit amet lacinia leo nibh ac justo. Sed sed enim
+        condimentum, semper ligula a, ullamcorper leo. Aliquam eget sagittis eros, id hendrerit tortor. Phasellus in
+        commodo nibh. Mauris dapibus orci quis dolor vulputate porta. Morbi eu tellus sed diam egestas porta.
+
+        Duis ut tincidunt urna, id tempor massa. Ut risus lectus, sodales quis consectetur id, dapibus sit amet lectus.
+        Donec pretium, nisl sed hendrerit faucibus, ligula lectus volutpat tortor, sed laoreet justo purus ut eros. Nunc
+        vitae dignissim turpis. Maecenas a tempor nisl. In at ultricies augue, eget hendrerit ipsum. Mauris pulvinar
+        sapien vitae magna tristique faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Maecenas suscipit diam leo, in vulputate turpis scelerisque in. Ut sed porta quam. Maecenas
+        venenatis neque lectus, sit amet maximus risus pharetra pulvinar. Sed nec imperdiet orci, vel pellentesque
+        ipsum.</p>
+</body>
+
+</html>
